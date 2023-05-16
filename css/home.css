@@ -20,7 +20,7 @@
   justify-content: space-around;
   justify-content: center;
   flex-direction: row;
-  width: 100px;
+  width: 200px;
   position: relative;
 }
 
@@ -84,10 +84,30 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media screen and (max-width: 953px) {
+
+
+@media screen and (min-width: 280px) {
   .container .home h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 30px;
+    margin-top: -100px;
+  }
+
+  .container .home h3 {
+    font-size: 20px;
+  }
+
+  .container .home p {
+    width: 250px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  .container .home h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-top: -100px;
   }
 
   .container .home h3 {
@@ -95,25 +115,62 @@
   }
 
   .container .home p {
+    width: 380px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .container .home h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: -100px;
+  }
+
+  .container .home h3 {
+    font-size: 30px;
+  }
+
+  .container .home p {
     width: 400px;
     font-size: 20px;
-
-    text-align: center;
   }
-  @media screen and (max-width: 953px) {
-    .container .home h1 {
-      font-size: 50px;
-    }
-  
-    .container .home h3 {
-      font-size: 30px;
-    }
-  
-    .container .home p {
-      width: 340px;
-      font-size: 15px;
-      text-align: center;
-    }
-  }
-
 }
+
+@media screen and (min-width: 820px) {
+  
+  .container .home h1 {
+    text-align: center;
+    font-size: 80px;
+  }
+
+  .container .home h3 {
+    font-size: 50px;
+  }
+
+  .container .home p {
+    width: 600px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  
+  .container .home h1 {
+    text-align: center;
+    font-size: 100px;
+    margin-top: -100px;
+  }
+
+  .container .home h3 {
+    font-size: 80px;
+  }
+
+  .container .home p {
+    width: 600px;
+    font-size: 25px;
+  }
+}
+
+
+
