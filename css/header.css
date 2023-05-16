@@ -5,16 +5,7 @@
   --font-color: #cbe4de;
 }
 
-* {
-  margin: 0;
-}
-html{
-  scroll-behavior: smooth;
-}
 
-body {
-  background: var(--background-color);
-}
 
 img,
 svg {

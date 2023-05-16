@@ -6,12 +6,11 @@
 }
 
 .container .home {
-  margin-top: -70px;
   display: flex;
   align-items: center;
-  justify-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: -70px;
   height: 750px;
 }
 
@@ -89,8 +88,6 @@
   .container .home h1 {
     text-align: center;
     font-size: 60px;
-    color: var(--font-color);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .container .home h3 {
@@ -102,6 +99,21 @@
     font-size: 20px;
 
     text-align: center;
+  }
+  @media screen and (max-width: 953px) {
+    .container .home h1 {
+      font-size: 50px;
+    }
+  
+    .container .home h3 {
+      font-size: 30px;
+    }
+  
+    .container .home p {
+      width: 340px;
+      font-size: 15px;
+      text-align: center;
+    }
   }
 
 }
