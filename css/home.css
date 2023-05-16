@@ -137,10 +137,8 @@
   }
 }
 
-@media screen and (min-width: 820px) {
-  
+@media screen and (min-width: 768px) {
   .container .home h1 {
-    text-align: center;
     font-size: 80px;
   }
 
@@ -152,7 +150,9 @@
     width: 600px;
     font-size: 20px;
   }
+
 }
+
 
 @media screen and (min-width: 1280px) {
   
