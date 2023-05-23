@@ -5,21 +5,120 @@
   --font-color: #cbe4de;
 }
 
-.container .contact {
-  margin-top: 100px;
+.contact{
+  color: var(--font-color);
   display: flex;
   align-items: center;
-  justify-items: center;
   justify-content: center;
-
   flex-direction: column;
-  height: 750px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh ;
+  width: 100%;
 }
 
-.container .contact h1 {
-  text-transform: uppercase;
-  margin-bottom: 100px;
-  font-size: 100px;
+.contact-content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 0px 0px 5px 5px var(--primary-color);
+}
+
+.contact-content:hover {
+  box-shadow: 0px 0px 5px 5px var(--detail-color);
+}
+
+
+.contact .contact-form{
+  display: flex;
+  justify-content: start;  
+}
+
+.contact .contact-icons{
+  width: 100%;
+}
+
+.contact .submit{
+  display: flex;
+  background-color: var(--primary-color);
+  border: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
   color: var(--font-color);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.contact .submit h1{
+  font-size: 30px;
+}
+
+
+
+input:focus,
+textarea:focus{
+  outline: none;
+}
+
+.contact h1{
+  color: var(--font-color);
+  font-size: 100px;
+}
+
+.contact button{
+  width: 100%;
+  height: 50px;
+}
+
+.contact input{
+  background-color: var(--primary-color);
+  border: none;
+  width: 100%;
+  height: 25px;
+  border-radius: 2px;
+  color: var(--font-color);
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.contact label{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  align-self: flex-start;
+  
+  
+}
+
+.contact textarea{
+  border-radius: 2px;
+  color: var(--font-color);
+  background-color: var(--primary-color);
+  font-size: 20px;
+  border: none;
+  padding: 1px;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+  border: 1px solid var(--detail-color);
+  background-color: var(--background-color);
+  padding: 0px;
+
+}
+
+
+
+.contact .submit:hover{
+  transform: scale(1.1);
+}
+
+.contact .form-control{
+  transition: 0.3s;
 }

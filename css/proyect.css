@@ -7,12 +7,15 @@
 
 .container .proyect {
   margin-top: 70px;
+  margin-bottom: 75px;
   display: flex;
   align-items: center;
   justify-items: center;
-  justify-content: center;
   flex-direction: column;
-  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-height: 100vh;
 }
 
 .container .proyect h1 {

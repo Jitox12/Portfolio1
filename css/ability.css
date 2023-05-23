@@ -12,7 +12,7 @@
     justify-content: center;
     flex-direction: column;
     justify-content: space-around;
-    height: 750px;
+    height: 100vh;
   }
 
   .container .ability .icons{
@@ -24,11 +24,10 @@
     flex-wrap: wrap;
     transition: .4s ;
     width: 1000;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
-  .container .ability .icons:hover{
-    transform: scale(1.1);    
-  }
 
   
 .container .ability h1 {
@@ -61,9 +60,6 @@
 
   }
 
-
-
-
   .container .ability .icon .github-skill{
     color: black;
   }
@@ -74,29 +70,82 @@
     
   }
 
-  @media screen and (max-width: 953px) {
+  @media screen and (min-width: 280px) {
     .container .ability h1 {
       text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    .container .ability .icon{
+      height: 70px;
+      width: 75px;
+    }
+  
+  }
+  
+  @media screen and (min-width: 360px) {
+    .container .ability h1 {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
+    }
+  
+  @media screen and (min-width: 412px) {
+    .container .ability h1 {
+      font-size: 40px;
+    }
+  
+  }
+
+  @media screen and (min-width: 540px) {
+    .container .ability h1{
       font-size: 50px;
-      color: var(--font-color);
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container .ability h1 {
+      font-size: 70px;
+    }
+  
 
+  }
+  
+  @media screen and (min-width: 820px) {
+    .container .ability h1 {
+      font-size: 80px;
+    }
+    .container .ability .icon{
+      width: 100px;
+      height: 100px;
+      margin: 30px;
+    }
+  
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .container .ability h1 {
+      font-size: 100px;
+    }
     .container .ability .icons{
-      margin-top: 100px;
-      width: 500px;
+      transition: .4s ;
+      width: 1000;
+    }
+  
+    .container .ability .icon{
+      width: 100px;
+      height: 100px;
+      margin: 30px;
+    }
+  
+    .container .ability .icon:hover{
+      transform: scale(1.5);
+      background-color: var(--primary-color);
+      border-radius: 15px;
+      color: var(--detail-color);
     }
 
+ 
   }
-
-  @media screen and (max-width: 528px) {
-    .container .icons h1 {
-      width: 300px;
-  }
-
-  .container .icons .icon{
-    width: 75px;
-  }
-
-}
   

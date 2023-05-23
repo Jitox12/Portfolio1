@@ -26,6 +26,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .container .proyect .card.digipedia h3 {
@@ -46,10 +47,10 @@
 
 .container .proyect .card {
   position: relative;
-  width: 300px;
-  height: 350px;
+  width: 200px;
+  height: 250px;
   margin: 10px;
-  padding: 0;
+  padding: 10px;
 }
 
 .container .proyect .card .face {
@@ -106,7 +107,7 @@
 
 .container .proyect .card .back h3 {
   font-size: 30px;
-  margin-top: 20px;
+  margin: 20px 0px;
   letter-spacing: 2px;
 }
 
